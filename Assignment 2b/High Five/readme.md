@@ -1,28 +1,85 @@
-## 🚀 Case Study 2 : Alternatives to Pandas for Processing Large Datasets
+## 🏥 Case Study 2 : Koalas Vs Pandas Library on Health Insurance Marketplace Dataset
 
-Pandas library has became the de facto library for data manipulation in python and is widely used by data scientist and analyst. However, there are times when the dataset is too large and Pandas may run into memory errors. Here are 8 alternatives to Pandas for dealing with large datasets. For each alternative library, we will examine how to load data from CSV and perform a simple groupby operation. Fortunately many of these libraries have similar syntax as Pandas hence making the learning curve less steep.
-1. Data Table
-2. Polars
-3. Vaex
-4. Pyspark
-5. Koalas
-6. cuDF
-7. Dask
-8. Modin
+![image](https://user-images.githubusercontent.com/99240177/212251329-77469daa-6e5a-464d-915d-a8cb4be0c674.png)
 
-## 🌟 Case Study 2b: Solutions
+  
+**Group Members:**
 
-| Team | Title | Colab |  GitHub |
-| ----- | ----- | ------ | ------ | 
-| 1 | Pandas vs DataTable | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 2 | Pandas vs Polars | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 3 | Pandas vs Vaex | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 4 | Pandas vs Pyspark | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://colab.research.google.com/drive/1Ta8kvxB4NlMHO204WZtrnfnVToPVr2J5?usp=sharing) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://github.com/drshahizan/Python_EDA/tree/main/Malaysia%20EDA/Boboiboy) |
-| 5 | Pandas vs Koalas | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 6 | Pandas vs cuDF | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 7 | Pandas vs DataTable | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 8 | Pandas vs Polars | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 9 | Pandas vs Vaex | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 10 | Pandas vs Pyspark | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 11 | Pandas vs Koalas | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Matric</th>
+  </tr>
+  <tr>
+    <th>AHMAD MUHAIMIN BIN AHMAD HAMBALI</th>
+    <th>A20EC0006</th>
+  </tr>
+  <tr>
+    <th>NAYLI NABIHAH BINTI JASNI</th>
+    <th>A20EC0105</th>
+  </tr>
+    <tr>
+    <th>SAKINAH AL’IZZAH BINTI MOHD ASRI</th>
+    <th>A20EC0142</th>
+  </tr>
+    <tr>
+    <th>LEE JIA XIAN</th>
+    <th>A20EC0200</th>
+  </tr>
+</table> 
+
+
+Koalas is a data science library that implements the pandas APIs on top of Apache Spark so that data scientists can use their favourite APIs on datasets of any size.The file will compare koalas and pandas to see which libraries are more efficient to use in the health insurance marketplace dataset. The following operations and visualisations will be used to perform the comparison:
+
+  ● Comparison between read CSV
+
+  ● Comparison between mean from one column
+
+  ● Comparison between bar chart
+
+  ● Comparison between counting of null values 
+
+  ● Comparison between calculation of numerical data
+
+  ● Comparison between histogram
+
+## Dataset
+
+The Health Insurance Marketplace Public Use Files contain information on health and dental plans available through the US Health Insurance Marketplace to individuals and small businesses. We chose rate.csv as our analysis datase from the combined csv file because it has the biggest file size (1.97 GB).
+
+The dataset can be downloaded from Kaggle: <a href="https://www.kaggle.com/datasets/hhs/health-insurance-marketplace?select=Rate.csv">Health Insurance Marketplace from Rate dataset</a>
+
+
+The dataset we are using is the rate.csv file in the Health Insurance Marketplace Public Use Files from Kaggle: https://www.kaggle.com/datasets/hhs/health-insurance-marketplace?select=Rate.csv.
+
+
+&emsp;The rate.csv file is one of several CSV (comma-separated values) files that make up the Health Insurance Marketplace Public Use Files (PUF) dataset. The file contains information about the rates, or prices, of healthcare plans available on the individual market through the Health Insurance Marketplace also known as "Obamacare" marketplace. The dataset is collected by U.S Department of Health and Human Services (HHS) and provided by the Centers for Medicare & Medicaid Services (CMS)
+
+&emsp;It provides detailed information about health plans, and pricing information available through the marketplace and its help researchers, consumer advocates, and policy makers to study and analyze trends in the individual health insurance market, understand the options, and costs associated with obtaining health coverage through the marketplace.
+
+&emsp;It contains information about the different plans offered by insurance companies, including the type of coverage, deductibles, and out-of-pocket limits, and pricing information, such as monthly premiums, and financial assistance available to eligible individuals and families.
+
+The rate.csv file contains the following columns:
+
+  1. **BusinessYear**: The year of the plan
+  2. **StateCode**: The code of the state where the plan is offered
+  3. **IssuerId**: The unique identifier of the insurance company that offers the plan
+  4. **SourceName**: The source of the rate information (e.g. the insurer, the state insurance department).
+  5. **VersionNum**: A version number for the rate information.
+  6. **ImportDate**: The date on which the rate information was imported into the Marketplace database.
+  7. **PlanId**: Unique identifier of the plan
+  8. **RatingAreaId**: The identifier of the geographic region where the rate applies
+  9. **Tobacco**: Whether the rate applies to tobacco users or not
+  10. **Age**: The age group for which the rate is specified
+  11. **IndividualRate**: The monthly premium for an individual who selects the plan
+  12. **IndividualTobaccoRate**: The monthly premium for an individual who selects the plan and uses tobacco
+  13. **Couple**: The monthly premium for a couple who selects the plan
+  14. **PrimarySubscriberAndOneDependent**: The monthly premium for a primary subscriber and one dependent who select the plan
+  15. **PrimarySubscriberAndTwoDependents**: The monthly premium for a primary subscriber and two dependents who select the plan
+  16. **PrimarySubscriberAndThreeOrMoreDependents**: The monthly premium for a primary subscriber and three or more dependents who select the plan
+  17. **CoupleAndOneDependent**: The monthly premium for a couple and one dependent who select the plan
+  18. **CoupleAndTwoDependents**: The monthly premium for a couple and two dependents who select the plan
+  19. **CoupleAndThreeOrMoreDependents**: The monthly premium for a couple and three or more dependents who select the plan
+
+Overall, the rate.csv dataset is an important resource that provides valuable information about the health insurance marketplace, which can be used to improve access to affordable health coverage for individuals and families.
 

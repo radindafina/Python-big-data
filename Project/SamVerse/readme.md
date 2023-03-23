@@ -1,26 +1,62 @@
-## 🚀 Project: Instructions
+![spotify](https://martech.org/wp-content/uploads/2017/09/spotify-logo-1920x1080.jpg)
 
-1. You need to use a dataset that is larger than 1 GB. You can get the dataset from [Kaggle](https://www.kaggle.com/datasets) or [Dataset Search](https://datasetsearch.research.google.com/). The dataset file must be of CSV type.
-2. The dataset must be stored in Google Drive.
-3. Make sure you create a link to enable your dataset to be used on Google Colab.
-4. Please create operations related to big data that allow the dataset to be used.
-5. You need to use at least three libraries related to big data processing such as Pandas, Dask, Vaex and Modin.
-6. Please compare the processing results from the selected libraries.
-7. You need to use the concept of Exploratory Data Analysis (EDA) on this project.
+## Group Members: 
+<table align = "center">
+  <tr>
+    <th>Name</th>
+    <th>Matrix Number</th>
+  </tr>
+  <tr>
+    <th>LUQMAN ARIFF BIN NOOR AZHAR</th>
+    <th>A20EC0202</th>
+  </tr>
+  <tr>
+    <th>AHMAD AIMAN HAFIZI BIN MUHAMMAD</th>
+    <th>A20EC0177</th>
+  </tr>
+    <tr>
+    <th>LEE CAI XUAN</th>
+    <th>A20EC0062</th>
+  </tr>
+    <tr>
+    <th>MYZA NAZIFA BINTI NAZRY</th>
+    <th>A20EC0219</th>
+  </tr>
+</table>
 
-## 🌟 Project: Solutions
+## Introduction
+The proposed project is about Spotify Charts. This dataset consists of 9 columns and 26173514 rows. The dataset is about 3.24 GB in size which can be considered as a big data. We settled on this dataset as we thought it would be quite fun and also usable which we could make something out of it in terms of analysis. In this project, we will carry out all the necessary data cleaning and data preprocessing, visualization, and EDA. We were also instructed to utilize three different libraries during the project so we could compare all three in terms of performance. The three libraries we will be using in this project is Pandas, PySpark, and Koalas. 
 
-| Team | Libraries for data science | Colab |  GitHub |
-| ----- | ----- | ------ | ------ | 
-| 1 | DataTable | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 2 | Polars | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 3 | Vaex | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 4 | Pyspark | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://colab.research.google.com/drive/1Ta8kvxB4NlMHO204WZtrnfnVToPVr2J5?usp=sharing) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://github.com/drshahizan/Python_EDA/tree/main/Malaysia%20EDA/Boboiboy) |
-| 5 | Koalas | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 6 | cuDF | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 7 | DataTable | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 8 | Polars | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 9 | Vaex | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 10 | Pyspark | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
-| 11 | Koalas | [![Open in Colab](https://img.shields.io/static/v1?label=&message=Open%20in%20Colab&labelColor=grey&color=blue&logo=google-colab)](https://) | [![Open in GitHub](https://img.shields.io/static/v1?label=&message=Open%20in%20GitHub&labelColor=grey&color=blue&logo=github)](https://) |
+<br>
+<h2> Libraries</h2>
+<h4>1. Pandas</h4>
+<h4>2. PySpark</h4>
+<h4>3. Koalas</h4>
+<br>
 
+
+<h2> Dataset</h2>
+<a href="https://www.kaggle.com/datasets/dhruvildave/spotify-charts?select=charts.csv">Kaggle: Spotify Charts</a><br>
+
+#### Attribute Information:
+| Attribute | Description |
+| --- | --- |
+| **Title** |   Song Title  |
+|**Rank** |   Latest Ranking of the song on Spotify |
+| **Date** | Latest Date of Song Ranking |
+| **Artist** | Artist Name |
+| **Url** | Spotify Url  |
+| **Region** |  Region of Account on Spotify   |
+| **Chart** | Song Charting on Spotify  |
+| **Trend** | Position Changes of Song Ranking on Spotify  |
+| **Stream** | Total Number of Song Streaming on Spotify  |
+
+<h2> Contents</h2>
+1. Data Preparation and Cleaning <br>
+2. Exploratory Analysis and Visualization<br>
+3. QnA<br>
+
+<h2> Conclusion</h2>
+In conclusion, PySpark is the best and fastest choice when performing the Exploratory Data Analysis (EDA) while working with large datasets. Based on the analysis done, it has been proven that PySpark has the best performance and followed by Koalas and then, Pandas.
+
+> PySpark > Koalas > Pandas

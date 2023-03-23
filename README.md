@@ -10,6 +10,16 @@ Don't forget to hit the :star: if you like this repo.
 # About Us
 The information on this Github is part of the materials for the subject High Performance Data Processing (SECP3133). This folder contains general big data information as well as big data case studies using Malaysian datasets. This case study was created by a [Bachelor of Computer Science (Data Engineering)](https://comp.utm.my/bachelor-of-computer-science-data-engineering/), Universiti Teknologi Malaysia student.
 
+<p align="center">
+<img src="https://github.com/drshahizan/Python_EDA/blob/main/lab/hpdp1.jpeg"  height="200" />
+</p>
+
+# 📚 Course: High Performance Data Processing 
+- [Python for beginners](https://github.com/drshahizan/python-tutorial)
+- [Web scraping and Python web framework](https://github.com/drshahizan/python-web)
+- [Exploratory data analysis](https://github.com/drshahizan/Python_EDA)
+- [Big data processing](https://github.com/drshahizan/Python-big-data)
+
 ### Contents:
 - [Notes](#notes)
   - Big Data: Pandas
@@ -26,7 +36,7 @@ The information on this Github is part of the materials for the subject High Per
   - Comparison between libraries
 - Assignment
   - [Assignment1: Pandas - Data Processing](https://github.com/drshahizan/Python-big-data/tree/main/Assignment%201)
-  - [Assignment2: Alternatives to Pandas for Processing Large Datasets]
+  - Assignment2: Alternatives to Pandas for Processing Large Datasets
     - [Solution 2a](https://github.com/drshahizan/Python-big-data/tree/main/Assignment%202a)        
     - [Solution 2b](https://github.com/drshahizan/Python-big-data/tree/main/Assignment%202b)
 - [Project](https://github.com/drshahizan/Python-big-data/tree/main/Project)
@@ -42,6 +52,7 @@ The information on this Github is part of the materials for the subject High Per
 - [Reducing Pandas memory usage](https://pythonspeed.com/articles/pandas-load-less-data/)
 - [How To Handle Large Datasets in Python With Pandas](https://pythonsimplified.com/how-to-handle-large-datasets-in-python-with-pandas/)
 - [Efficient Pandas: Using Chunksize for Large Datasets](https://towardsai.net/p/data-science/efficient-pandas-using-chunksize-for-large-data-sets-c66bf3037f93)
+- [How did I convert the 33 GB Dataset into a 3 GB file Using Pandas?](https://medium.com/aatomz-research/how-did-i-convert-the-33-gb-dataset-into-a-3-gb-file-using-pandas-b21d8da205c0)
 - [Video: How to work with big data files (5gb+) in Python Pandas!](https://youtu.be/l34l-90UF7U)
 - [Loading large datasets in Panda](https://towardsdatascience.com/loading-large-datasets-in-pandas-11bdddd36f7b)
 - [Video: How to Read Very Big Files With SQL and Pandas in Python](https://youtu.be/xKMyk4wDHnQ)
